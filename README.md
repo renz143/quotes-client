@@ -20,7 +20,7 @@ What I used to build up this project.
 
 ### API
 
-1. [Random Quotes API](https://github.com/renz143/quotes-api)
+1. [Quotes API](https://github.com/renz143/quotes-api)
 
 ## Available Scripts
 
