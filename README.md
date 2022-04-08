@@ -1,6 +1,6 @@
 <div align="center">
 
-# Random Quote Machine
+# Inspirational Quotes
 </div>
 <p align="center">
 <a href="https://harmonify-rqm.netlify.app/" target="_blank"><img src="https://raw.githubusercontent.com/harmonify/random-quote-machine/main/.github/img/preview.png" width="600"></a>
