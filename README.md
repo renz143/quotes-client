@@ -6,7 +6,7 @@
 <a href="https://inspiring-quotes-07c1b2.netlify.app/" target="_blank"><img src="https://raw.githubusercontent.com/renz143/quotes-client/master/public/preview.png" width="600"></a>
 </p>
 
-This project is a random quote machine I built using React for FreeCodeCamp's Front End Development Libraries Project. This project is hosted on [Netlify](https://harmonify-rqm.netlify.app).
+This project is a random quote machine I built using React for FreeCodeCamp's Front End Development Libraries Project. This project is hosted on [Netlify](https://inspiring-quotes-07c1b2.netlify.app).
 
 ## Tech & API
 
@@ -20,7 +20,7 @@ What I used to build up this project.
 
 ### API
 
-1. [Random Quotes API](https://github.com/lukePeavey/quotable)
+1. [Random Quotes API](https://github.com/renz143/quotes-api)
 
 ## Available Scripts
 
