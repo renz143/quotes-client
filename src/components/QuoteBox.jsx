@@ -12,11 +12,12 @@ export function QuoteBox () {
   useEffect(() => {
     state.quote.then(
       r => {
-        setQuote(r)
+        // The API returns an array, we take the first element
+        setQuote(r[0])
         setIsLoading(false)
       }
     )
-  })
+  }, [state.quote]) // Added state.quote as a dependency
 
   return (
     <div className="col-lg-5 d-flex flex-column bg-white p-5 rounded-3" id="quote-box">
@@ -26,7 +27,8 @@ export function QuoteBox () {
           id="text"
           style={{ color: state.color }}
         >
-          <i className="fa fa-quote-left" />  {!isLoading && quote.content }
+          {/* Updated to use quote.quote for the content */}
+          <i className="fa fa-quote-left" />  {!isLoading && quote && quote.quote }
         </blockquote>
       </div>
       <span
@@ -34,10 +36,12 @@ export function QuoteBox () {
         id="author"
         style={{ color: state.color }}
       >
-        - {!isLoading && quote.author }
+        {/* Ensure quote object exists before accessing author */}
+        - {!isLoading && quote && quote.author }
       </span>
       <div className="d-flex justify-content-between">
-        <TweetQuoteButton quote={!isLoading && quote} />
+        {/* Pass the correct quote content to TweetQuoteButton */}
+        <TweetQuoteButton quote={!isLoading && quote ? { content: quote.quote, author: quote.author } : null} />
         <NewQuoteButton />
       </div>
     </div>

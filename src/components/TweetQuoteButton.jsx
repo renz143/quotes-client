@@ -9,7 +9,8 @@ export const TweetQuoteButton = (props) => {
   const query = {
     hashtags: "quotes",
     related: "harmonify",
-    text: `${props.quote.content} - ${props.quote.author}`
+    // Ensure props.quote exists before accessing its properties
+    text: props.quote ? `${props.quote.content} - ${props.quote.author}` : ""
   };
   for (let [key, value] of Object.entries(query)) {
     tweetUrl += `${key}=${value}&`
